@@ -12,7 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.network :forwarded_port, guest: 80, host: 8080
     config.vm.network :forwarded_port, guest: 3306, host: 3306 # mysql
 
-    config.vm.host_name = "pco.wc.dev"
+    config.vm.host_name = "site.dev"
 
     config.vm.provision :shell, :path => "up.sh"
 
