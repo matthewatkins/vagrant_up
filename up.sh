@@ -50,7 +50,7 @@ sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
 
 echo "--- Setting document root ---"
 sudo rm -rf /var/www/html
-sudo ln -fs /vagrant /var/www/html
+sudo ln -fs /vagrant/public /var/www/html
 
 echo "--- Restarting Apache ---"
 sudo service apache2 restart
